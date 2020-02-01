@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Card from './Card'
 
 // function orderByDate(arr) {
@@ -49,13 +49,13 @@ class Home extends React.Component {
     if (!this.state.party.results) return null
     return (
       <div className="section">
-        <div className="container">
+        <div>
           <div className="columns is-mobile is-multiline">
             {this.state.party.results.map(result =>
               <div key={result.id}>
-                {/* <Link to={`/results/${results.id}`}> */}
-                <Card {...result} />
-                {/* </Link> */}
+                <Link to={`/results/${result.id}`}>
+                  <Card {...result} />
+                </Link>
               </div>
             )}
           </div>

@@ -1,24 +1,24 @@
 import React from 'react'
 
-const Card = ({ largeimageurl, eventname, postcode, startdate, openingtimes, minage, address }) => {
+const Card = ({ largeimageurl, eventname, postcode, startdate, openingtimes, minage, address, venue }) => {
   return (
-
-    < div className="card" >
+    
+    < div className="card">
       <div className="card-image">
         <figure className="image is-2by3">
-          <img src={largeimageurl} alt={eventname}/>
+          <img src={largeimageurl} />
         </figure>
       </div>
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="subtitle is-4 is-size-5 has-text-white">{address}</p>
+            <p className="subtitle is-3 is-size-4 has-text-white">{}</p>
             <p className=" title is-italic is-6 is-size-7 has-text-light">{startdate}</p>
           </div>
         </div>
-      </div >
-    </div >
-
+      </div>
+    </div>
+   
 
 
 
